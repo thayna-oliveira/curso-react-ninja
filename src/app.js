@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
 
 import Button from './components/button';
-import LikeButton from './components/likeButton';
+import Box from './components/box';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
 
-      <Button>Clique aqui</Button>
-      <LikeButton/>
-    </div>
-  );
+  constructor() {
+    super();
+
+    this.state = {
+      color: 'blue'
+    }
+
+  }
+
+  render() {
+
+    return (
+
+      <div className="container">
+
+        {['blue', 'orange', 'pink'].map((color, key) => (
+          <Button key={key} handleClick={() => this.setState({ color })}>{color}</Button>
+        ))}
+
+        <Box color={this.state.color} />
+
+      </div>
+    );
+  }
+
 }
 
 export default App;

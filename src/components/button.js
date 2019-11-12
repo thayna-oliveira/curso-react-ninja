@@ -1,6 +1,6 @@
-import React from 'react'; 
+import React from 'react';
 
-const Button = ({children, handleClick}) => (
+const Button = ({ children, handleClick }) => (
     <button onClick={handleClick}>{children}</button>
 );
 

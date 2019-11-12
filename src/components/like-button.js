@@ -15,10 +15,13 @@ class LikeButton extends Component {
         return (
             <div>
                 <Button handleClick={() => this.setState(
-                    (preState) => { return {
-                        likes: preState.likes + 1
-                    }}
-                )}>Curtir</Button>
+                    (preState) => { 
+                        return { likes: preState.likes + 1 }
+                    }
+                )}>
+                    Curtir
+                </Button>
+
                 <p>{`${this.state.likes} likes`}</p>
             </div>
         );
