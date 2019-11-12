@@ -1,11 +1,15 @@
-'use strict'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-import React from 'react'
+import Title from './components/Title';
 
-const App = React.createClass({
-  render () {
-    return <h2>Exemplo com hotloader</h2>
-  }
-})
+function App() {
+  return (
+    <div className="App">
+      <Title name='Thayná'/>
+    </div>
+  );
+}
 
-export default App
+export default App;
