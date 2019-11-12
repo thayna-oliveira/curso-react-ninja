@@ -5,6 +5,8 @@ const Box = ({color}) => (
         backgroundColor: color,
         height: `50px`,
         width: `50px`
+    }} onClick={(e) => {
+        alert(`Você clicou no botão ${color}`);
     }}/>
 );
 

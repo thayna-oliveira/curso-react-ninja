@@ -2,15 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import Box from './components/Box';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
 
-      {['blue', 'green', 'aliceblue'].map((color, key) => (
-        <Box key={key} color={color} />
-      ))}
+      <Button><span>Oi</span>Clique aqui</Button>
 
     </div>
   );
