@@ -2,14 +2,15 @@ import React from 'react';
 
 import './App.css';
 
-import Button from './components/Button';
+import Button from './components/button';
+import LikeButton from './components/likeButton';
 
 function App() {
   return (
     <div className="App">
 
-      <Button><span>Oi</span>Clique aqui</Button>
-
+      <Button>Clique aqui</Button>
+      <LikeButton/>
     </div>
   );
 }
