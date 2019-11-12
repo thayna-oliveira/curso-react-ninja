@@ -1,13 +1,17 @@
-import React from 'react'; 
+import React from 'react';
 
 import './App.css';
 
-import Title from './components/Title';
+import Box from './components/Box';
 
 function App() {
   return (
     <div className="App">
-      <Title />
+
+      {['blue', 'green', 'aliceblue'].map((color, key) => (
+        <Box key={key} color={color} />
+      ))}
+
     </div>
   );
 }
